@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .form-row {
+            display: flex;
+        }
+        #user-password { /* Targeting the password input by its ID */
+            margin-right: 8px; /* Additional space before the button */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-row">
+        <form action="/login" method="post">
+            <label for="user-name">&nbsp;Name&nbsp;</label>
+            <input type="text" id="user-name" name="username" placeholder="Enter your name here">
+            <label for="user-password">&nbsp;Password&nbsp;</label>
+            <input type="text" id="user-password" name="password" placeholder="Enter your password here">
+            <button type="submit">OK</button>
+        </form>
+    </div>
+</body>
+</html>
